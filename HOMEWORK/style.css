@@ -97,7 +97,6 @@ nav a.active {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Job Card */
 .job-card {
     background-color: #fff;
     border-left: 5px solid #007bff;
@@ -105,12 +104,12 @@ nav a.active {
     margin-bottom: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     border-radius: 4px;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* הוספנו טרנזישן */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
 }
 
 .job-card:hover {
-    transform: translateY(-3px); /* אפקט ריחוף קל למעלה */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* צל קצת יותר בולט במעבר עכבר */
+    transform: translateY(-3px); /* אפקט ריחוף ה */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
 
 .job-card strong {
@@ -160,12 +159,12 @@ ul li {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* הוספנו טרנזישן */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .hobbies-list li:hover {
-    transform: translateY(-5px); /* אפקט ריחוף קל על כל הלי */
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15); /* צל קצת יותר חזק במעבר עכבר */
+    transform: translateY(-5px); /* אפקט ריחוףי */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .hobby-image {
@@ -175,7 +174,7 @@ ul li {
     object-fit: cover;
     margin-bottom: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out; /* הוספנו טרנזישן לתמונה */
+    transition: transform 0.2s ease-in-out; /*  טרנזישן לתמונה */
 }
 
 .hobby-image:hover {
@@ -199,12 +198,11 @@ footer {
     border-radius: 0 0 8px 8px;
 }
 
-/* Contact Page Specific Styles */
 .linkedin-button-contact {
-    display: inline-flex; /* כדי ליישר את הסמל והטקסט */
-    align-items: center; /* יישור אנכי למרכז */
-    gap: 10px; /* מרווח בין הסמל לטקסט */
-    background-color: #007bff; /* צבע כחול של לינקדאין */
+    display: inline-flex; 
+    align-items: center; 
+    gap: 10px; 
+    background-color: #007bff; 
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
