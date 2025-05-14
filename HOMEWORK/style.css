@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 0.8em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 2em 0;
+}
+
+/* Navigation */
+nav {
+    margin-top: 30px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+nav a.active {
+    color: #0056b3;
+    font-weight: 700;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 15px;
+    vertical-align: middle;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Job Card */
+.job-card {
+    background-color: #fff;
+    border-left: 5px solid #007bff;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* הוספנו טרנזישן */
+}
+
+.job-card:hover {
+    transform: translateY(-3px); /* אפקט ריחוף קל למעלה */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* צל קצת יותר בולט במעבר עכבר */
+}
+
+.job-card strong {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.job-card em {
+    color: #777;
+    font-style: italic;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Hobbies Page Specific Styles */
+.hobbies-container h1 {
+    margin-bottom: 2em;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2em;
+}
+
+.hobbies-list {
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    margin-top: 2em;
+}
+
+.hobbies-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* הוספנו טרנזישן */
+}
+
+.hobbies-list li:hover {
+    transform: translateY(-5px); /* אפקט ריחוף קל על כל הלי */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15); /* צל קצת יותר חזק במעבר עכבר */
+}
+
+.hobby-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out; /* הוספנו טרנזישן לתמונה */
+}
+
+.hobby-image:hover {
+    transform: scale(1.1); /* אפקט הגדלה קל במעבר עכבר */
+}
+
+.hobby-text {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+    color: #777;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Contact Page Specific Styles */
+.linkedin-button-contact {
+    display: inline-flex; /* כדי ליישר את הסמל והטקסט */
+    align-items: center; /* יישור אנכי למרכז */
+    gap: 10px; /* מרווח בין הסמל לטקסט */
+    background-color: #007bff; /* צבע כחול של לינקדאין */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.linkedin-button-contact:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.linkedin-icon {
+    width: 30px; /* גודל הסמל מוגדל */
+    height: 30px; /* גובה הסמל מוגדל */
+}
